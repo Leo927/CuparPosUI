@@ -1,20 +1,22 @@
-<h2>Tax Component</h2>
-<form>
+<section class="col-12">
+<h2>{{'TAX'| uppercase | translate}}</h2>
+<form (submit)="onSubmit($event)">
   <div class="form-group">
-    <label for="name">Name</label>
-    <input type="form-text" class="form-control" id="name">
+    <label for="name">{{'NAME'| uppercase |translate}}</label>
+    <input type="form-text" [(ng-model)]='this.tax.name'  class="form-control" id="name" >
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">GST</label>
-    <input type="form-text" class="form-control" id="gst">
+    <input  class="form-control" id="gst" [(ng-model)]='this.tax.gst'>
   </div>
   <div class="form-group">
     <label  for="exampleInputPassword1">PST</label>
-    <input type="form-text" class="form-control" id="pst">
+    <input class="form-control" id="pst" [(ng-model)]='this.tax.pst'>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">LCT</label>
-    <input type="form-text" class="form-control" id="lct">
+    <input class="form-control" id="lct" [(ng-model)]='this.tax.lct'>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">{{'SUBMIT'|uppercase|translate}}</button>
 </form>
+</section>
