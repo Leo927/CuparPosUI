@@ -3,19 +3,19 @@
 <form (submit)="onSubmit($event)">
   <div class="form-group">
     <label for="name">{{'NAME'| uppercase |translate}}</label>
-    <input type="form-text" [(ng-model)]='this.tax.name'  class="form-control" id="name" >
+    <input  [(ngModel)]='this.tax.name'  class="form-control" id="name" >
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">GST</label>
-    <input  class="form-control" id="gst" [(ng-model)]='this.tax.gst'>
+    <input  class="form-control" id="gst" [(ngModel)]='this.tax.gst'>
   </div>
   <div class="form-group">
     <label  for="exampleInputPassword1">PST</label>
-    <input class="form-control" id="pst" [(ng-model)]='this.tax.pst'>
+    <input class="form-control" id="pst" [(ngModel)]='this.tax.pst'>
   </div>
   <div class="form-group">
     <label for="exampleInputPassword1">LCT</label>
-    <input class="form-control" id="lct" [(ng-model)]='this.tax.lct'>
+    <input class="form-control" id="lct" [(ngModel)]='this.tax.lct'>
   </div>
   <button type="submit" class="btn btn-primary">{{'SUBMIT'|uppercase|translate}}</button>
 </form>

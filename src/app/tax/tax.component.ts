@@ -8,7 +8,14 @@ import { Tax } from '../models/tax';
   styleUrls: ['./tax.component.css']
 })
 export class TaxComponent implements OnInit {
-	tax:Tax = {};
+	tax:Tax = {
+  id:0,
+  name:'',
+  gst:0,
+  pst:0,
+  lct:0,
+  disabled:false
+  };
   
   constructor(translate: TranslateService) {  }
 
